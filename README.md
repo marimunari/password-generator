@@ -6,11 +6,11 @@
 
 <p align="center">
  <a href="#bookmark_tabs-sobre-o-projeto">Sobre o projeto</a> •
+ <a href="#pushpin-acessando-a-aplicação">Acessando a aplicação</a> • 
  <a href="#hammer_and_wrench-tecnologias">Tecnologias</a> • 
  <a href="#art-sobre-o-design">Sobre o Design</a> • 
  <a href="#books-features">Features</a> • 
  <a href="#gear-estrutura-do-projeto">Estrutura do projeto</a> • 
- <a href="#pushpin-acessando-a-aplicação">Acessando a aplicação</a> • 
  <a href="#memo-licença">Licença</a> • 
  <a href="#pencil2-autor">Autor</a> 
 </p>
@@ -18,6 +18,11 @@
 ## :bookmark_tabs: Sobre o projeto
 
 O projeto consiste em um gerador de senhas que gera senhas aleatórias de acordo com as características definidas pelo usuário.
+
+## :pushpin: Acessando a aplicação
+
+O deploy da aplicação foi realizado através da [Vercel](https://vercel.com/).  
+**Link:** [Gerador de senhas](https://password-generator-nu-umber.vercel.app/)
 
 ## :hammer_and_wrench: Tecnologias
 
@@ -70,12 +75,6 @@ index.html
   **js:** contém arquivos necessários para o funcionamento lógico aplicação.  
   **types:** contém arquivos de criação de tipos.  
   **utils:** contém arquivos de códigos úteis para toda a aplicação.  
-
-
-## :pushpin: Acessando a aplicação
-
-O deploy da aplicação foi realizado através da [Vercel](https://vercel.com/).  
-**Link:** [Gerador de senhas](https://password-generator-nu-umber.vercel.app/)
 
 ## :memo: Licença
 
