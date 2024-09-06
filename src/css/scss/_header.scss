@@ -1,0 +1,51 @@
+.header {
+  width: 80%;
+  max-width: 100%;
+  height: 165px;
+  position: absolute;
+  top: 83.77px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icon {
+    width: 37px;
+    height: 37px;
+  }
+
+  &__description {
+    width: 100%;
+    height: 78px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      width: 327px;
+      height: 42px;
+      font-weight: 700;
+      font-size: $font-size-xl;
+      line-height: 42.2px;
+      text-align: center;
+      color: $font-pure-white;
+    }
+
+    p {
+      width: 100%;
+      height: 60px;
+      font-weight: 400;
+      font-size: $font-size-md;
+      line-height: 28.13px;
+      text-align: center;
+      color: $font-pure-white;
+    }
+  }
+}
+
+@include responsive(large-desktop-up) {
+  .header {
+    height: 131px;
+  }
+}
