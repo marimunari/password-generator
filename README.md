@@ -50,7 +50,6 @@ Desenvolvido para as seguintes telas:
 ## :gear: Estrutura do projeto
 
 ```bash
-public
 src
 |_assets
   |_ icons
@@ -62,11 +61,12 @@ src
   |_ notification
   |_ password
   |_ ui
-```
-**public:** contém arquivos estáticos da aplicação.  
+favicon.svg
+index.html
+``` 
 **src:** contém código-fonte principal.  
   **assets:** contém arquivos de ícones e imagens.  
-  **css:** contém arquivos necessários para a aparência da aplicação.  
+  **css:** contém arquivos necessários para a aparência da aplicação(css/sass).  
   **js:** contém arquivos necessários para o funcionamento lógico aplicação.  
   **types:** contém arquivos de criação de tipos.  
   **utils:** contém arquivos de códigos úteis para toda a aplicação.  
