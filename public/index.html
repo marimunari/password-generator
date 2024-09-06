@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de senhas</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg">
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+  <main>
+    <header class="header">
+      <img 
+        class="header__icon" src="../src/assets/icons/unlock.svg"
+        alt="Ícone de cadeado fechado para indicar que a senha gerada é segura"
+        aria-labelledby="header-description"
+      >
+      <section id="header-description" class="header__description">
+        <h1>Gerador de senhas</h1>
+        <p>Gere instantaneamente uma senha aleatória e segura</p>
+      </section>
+    </header>
+    <section class="password">
+      <div class="password__container">
+        <span class="password__title">senha</span>
+        <span id="password__generated" class="password__generated" tabindex="0"></span>
+      </div>
+      <div class="password__icons">
+        <img
+          id="password__copy"
+          class="password__copy"
+          src="../src/assets/icons/copy.svg"
+          alt="Ícone clícavel para copiar senha"
+          tabindex="0"
+          aria-label="Copiar senha"
+        >
+        <img
+          id="password__refresh"
+          class="password__refresh"
+          src="../src/assets/icons/refresh-cw.svg"
+          alt="Ícone clícavel para gerar senha"
+          tabindex="0"
+          aria-label="Gerar nova senha"
+        >
+      </div>
+    </section>
+    <section class="settings">
+      <div class="settings__title">
+        <h2>Personalize sua senha</h2>
+      </div>
+      <section class="settings__generator">
+        <section class="settings__caracteres">
+          <h2>Número de caracteres</h2>
+          <input 
+            type="range"
+            id="settings__range"
+            class="settings__range"
+            min="4"
+            max="50"
+            value="12"
+            aria-labelledby="range-label"
+          />
+          <div class="settings__container-number">
+            <span id="settings__number" class="settings__number"></span>
+          </div>
+        </section>
+        <section class="settings__characteristics">
+          <h2>Características da senha</h2>
+          <section class="settings__checkboxes">
+            <div class="settings__checkbox">
+              <input
+                id="settings__uppercase"
+                class="settings__uppercase"
+                type="checkbox"
+                name="settings__uppercase"
+                value="uppercase"
+                aria-labelledby="uppercase-label"
+              >
+              <label
+                id="uppercase-label"
+                class="settings__label"
+                for="settings__uppercase"
+              >
+               Letras maiusculas
+              </label>
+            </div>
+            <div class="settings__checkbox">
+              <input
+                id="settings__lowercase"
+                class="settings__lowercase"
+                type="checkbox"
+                name="settings__lowercase"
+                value="lowercase"
+                checked
+                aria-labelledby="lowercase-label"
+              >
+              <label
+                id="lowercase-label"
+                class="settings__label"
+                for="settings__lowercase"
+              >
+                Letras minusculas
+              </label>
+            </div>
+            <div class="settings__checkbox">
+              <input
+                id="settings__numbers"
+                class="settings__numbers"
+                type="checkbox"
+                name="settings__numbers"
+                value="number"
+                aria-labelledby="numbers-label"
+              >
+              <label
+                id="numbers-label"
+                class="settings__label"
+                for="settings__numbers"
+              >
+                Números
+              </label>
+            </div>
+            <div class="settings__checkbox">
+              <input
+                id="settings__symbols"
+                class="settings__symbols"
+                type="checkbox"
+                name="settings__symbols"
+                value="symbol"
+                aria-labelledby="symbols-label"
+              >
+              <label
+                id="symbols-label"
+                class="settings__label"
+                for="settings__symbols"
+              >
+                Símbolos
+              </label>
+            </div>
+          </section>
+        </section>
+        <section class="settings__strength">
+          <h2>Força da senha</h2>
+          <div class="settings__container">
+            <div id="settings__container-bar" class="settings__container-bar">
+              <div
+                id="settings__bar"
+                class="settings__bar"
+                tabindex="0"
+                aria-label="Barra de força da senha"
+              >
+              </div>
+            </div>
+            <div class="settings__description">
+              <span class="settings__weak">Fraca</span>
+              <span class="settings__average">Média</span>
+              <span class="settings__strong">Forte</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="button">
+      <button
+        id="button__copy"
+        class="button__copy"
+        aria-label="Copiar senha"
+      >
+        Copiar senha
+      </button>
+    </section>
+    <section id="notification" aria-live="assertive"></section>
+  </main>
+  
+  <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>
