@@ -1,0 +1,11 @@
+body {
+  background-color: $background-midnight-blue;
+  font-family: $primary-font-family;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
