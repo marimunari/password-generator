@@ -1,0 +1,35 @@
+.button {
+  width: 80%;
+  max-width: 100%;
+  position: absolute;
+  top: 1370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__copy {
+    width: 154.88px;
+    height: 46px;
+    border-radius: 2px;
+    padding: 10px 12px 10px 12px;
+    border: none;
+    background-color: $background-vivid-magenta;
+    color: $font-midnight-blue;
+    font-size: $font-size-sm;
+    line-height: 25.78px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+@include responsive(desktop-up) {
+  .button {
+    top: 1180px;
+  }
+}
+
+@include responsive(large-desktop-up) {
+  .button {
+    top: 833.25px;
+  }
+}
