@@ -1,0 +1,15 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "random password generator in vanilla javascript",
+  "main": "main.js",
+  "dependencies": {
+    "sass": "^1.78.0"
+  },
+  "scripts": {
+    "build-css": "sass src/css/scss/style.scss src/css/styles.css",
+    "watch-css": "sass --watch src/css/scss/style.scss src/css/styles.css"
+  },
+  "author": "marimunari",
+  "license": "ISC"
+}
